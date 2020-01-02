@@ -29,6 +29,10 @@ public class PessoaService {
 	public PessoaDomain alterar(PessoaDomain p){
 		pessoaRepository.save(p);			
 		return p;
+	}
+	
+	public void excluir(String codigo){
+		pessoaRepository.deleteById(codigo);			
 	}	
 	
 }
